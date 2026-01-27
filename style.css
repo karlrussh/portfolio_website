@@ -3,9 +3,11 @@ body {
   font-family: monospace;
   font-size: 13px;
   background-image: url('assets/bgalt.png');
-  background-attachment: fixed;
-  background-size: 1920px auto;
-  image-rendering: pixelated;
+    background-attachment: fixed;
+    background-size: 210vh auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
   cursor: url('assets/cursor.png'), auto;
   z-index: -10;
 }
@@ -43,6 +45,11 @@ p {
   margin-top: 0;
 }
 
+h1 {
+  color: gainsboro;
+  font-size: 25px;
+}
+
 .stretch {
   text-align: justify;
   text-align-last: justify;
@@ -66,7 +73,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-left: 0;
   margin-top: 0;
   padding-right: 0;
@@ -174,6 +180,7 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  align-self: center;
   justify-content: center;
   margin: 0px;
   background: linear-gradient(180deg, rgb(49, 3, 3, 1) 15%, rgb(80, 6, 6) 50%, rgba(49, 3, 3, 1) 75%);
@@ -216,11 +223,6 @@ p {
 }
 
 .line-break {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 10px;
     margin-left: 15px;
     margin-right: 15px;
@@ -283,26 +285,6 @@ p {
     flex-shrink: 0;
 }
 
-.footer{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background: linear-gradient(180deg, rgb(20, 20, 20) 15%, rgb(56, 56, 56) 50%, rgb(20, 20, 20) 75%);
-    border-width: 1px;
-      border-left: 1px;
-      border-right: 1px;
-      border-bottom: 0px;
-    border-color:  rgb(90, 90, 90);
-    border-style: solid;
-    max-height: 22px;
-    height: 100%;
-    max-width: 928px;
-    width: 100%;
-    flex-shrink: 0;
-}
-
 .gameicon {
   display: flex;
   justify-content: center;
@@ -311,9 +293,9 @@ p {
   border-style: dotted;
   border-color:  rgb(167, 167, 167);
   max-width: 60px;
-  width: 100%;
+    width: 100%;
   max-height: 60px;
-  height: 100%;
+    height: 100%;
 }
 
 .gamerow {
@@ -418,31 +400,31 @@ p {
 
 .featured-game {
   display: block;
+  align-self: center;
   height: 400px;
   width: 200px;
   border-width: 1px;
   border-color: rgb(167, 167, 167);
   border-style: solid;
-  margin-left: 200px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 
-.footer-hyprlinks-dock {
-  justify-items: center;
+.footer{
   display: flex;
-  flex-direction: row;
-  padding: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.footer-hyprlinks {
-  display: flex;
+  justify-content: space-between;
+  align-self: center;
   align-items: center;
-  flex-direction: row;
-  text-align: left;
-  padding: 15px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-  margin: 0px;
+  background: linear-gradient(180deg, rgb(20, 20, 20) 15%, rgb(56, 56, 56) 50%, rgb(20, 20, 20) 75%);    border-width: 1px;
+  border-width: 1px;
+    border-bottom-width: 0px;
+  border-color:  rgb(90, 90, 90);
+  border-style: solid;
+  height: 22px;
+  max-width: 928px;
+    width: 100%;
+}
+
+.footer-object{
+  margin-left: 15px;
+  margin-right: 15px;
 }
