@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: monospace;
   font-size: 13px;
-  background-image: url('assets/bgalt.png');
+  background-image: url('assets/bg.png');
     background-attachment: fixed;
     background-size: 210vh auto;
     background-repeat: no-repeat;
@@ -148,9 +148,7 @@ h1 {
   margin: 10px;
     margin-left: 0px;
     margin-right: 0px;
-  border-color:  rgb(167, 167, 167);
-  border-width: 1px;
-  border-style: solid;
+
   height: 223px;
 }
 
@@ -502,4 +500,10 @@ h1 {
   max-height: max-content;
   padding: 1px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.disc-gif{
+  height: 300px;
+  width: 300px;
+  margin: 15px;
 }
