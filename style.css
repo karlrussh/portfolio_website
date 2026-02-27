@@ -2,10 +2,9 @@ body {
   margin: 0;
   font-family: monospace;
   font-size: 13px;
-  background-image: url('assets/bg.png');
+  background-image: url('assets/bg-tile.png');
     background-attachment: fixed;
-    background-size: 210vh auto;
-    background-repeat: no-repeat;
+    background-size: 64px;
     background-position: center;
     image-rendering: pixelated;
   cursor: url('assets/cursor.png'), auto;
@@ -68,8 +67,10 @@ h1 {
 
 .contents {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
+  flex-direction: column;
+  align-items: center;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -85,20 +86,18 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-right: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
-  background: black;
   border-style: solid;
   border-width: 1px;
-    border-top-width: 0;
     border-bottom-width: 0;
-  border-color: rgb(90, 90, 90);
+  border-color: rgb(165, 165, 165);
   max-width: 928px;
     width: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 1);
 }
 
 .body {
@@ -148,15 +147,15 @@ h1 {
   margin: 10px;
     margin-left: 0px;
     margin-right: 0px;
-
   height: 223px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 
 #headerbanner {
   position: absolute;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.25);
+  filter: brightness(0.15);
   height: 100%;
   width: 100%;
   user-select: none;
@@ -181,7 +180,7 @@ h1 {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color:  rgb(167, 167, 167);
   border-style: solid;
   border-width: 1px;
@@ -228,8 +227,9 @@ h1 {
   border-color:  rgb(167, 167, 167);
   border-style: solid;
   border-width: 1px;
+    border-bottom-width: 0px;
   height: 20px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+
   z-index: 1;
 }
 
@@ -237,28 +237,19 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
-  align-self: center;
   justify-content: center;
   margin: 0px;
   background: linear-gradient(180deg, rgb(49, 3, 3, 1) 15%, rgb(80, 6, 6) 50%, rgba(49, 3, 3, 1) 75%);
-  border-color:  rgb(134, 11, 11);
-  border-style: dotted;
-  border-width: 1px;
-  padding: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   height: 20px;
-  max-width: 918px;
-    width: 100%;
-  z-index: 10;
+  width: 100%;
 }
 
 .text-scrolling {
   padding-right: 100px;
   display: inline-block;
   white-space: nowrap;
-    text-wrap-mode: nowrap;
     white-space-collapse: collapse;
+  width: 100%;
 }
 
 .text-left {
@@ -280,10 +271,8 @@ h1 {
 }
 
 .line-break {
-  margin: 10px;
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+  margin: 15px;
+    margin-bottom: 5px;
   border-color:  rgb(167, 167, 167);
   border-style: dotted;
   border-width: 1px;
@@ -321,26 +310,27 @@ h1 {
 .container{
   margin-left: 15px;
   margin-right: 15px;
-  min-height: 260px;
+  height: fit-content;
 }
 
 .header{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: linear-gradient(90deg, rgb(56, 56, 56) 0%, rgb(0, 0, 0) 50%, rgb(56, 56, 56) 100%);
-    border-width: 1px;
-      border-left: 0px;
-      border-right: 0px;
-      border-top: 0px;
-    border-color:  rgb(90, 90, 90);
-    border-style: solid;
-    height: 22px;
-    max-width: 928px;
-    width: 100%;
-    flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+    margin-bottom: 50px;
+  padding: 5px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(56, 56, 56) 50%, rgb(0, 0, 0) 100%);
+  border-width: 1px;
+  border-color:  rgb(165, 165, 165);
+  border-style: solid;
+  height: 25px;
+  width: 950px;
+  flex-shrink: 0;
+  z-index: 10;
+  box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 1);
 }
 
 .gameicon {
@@ -379,7 +369,7 @@ h1 {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color:  rgb(167, 167, 167);
   border-style: solid;
   border-width: 1px;
@@ -392,9 +382,8 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0px;
   padding: 0px;
-  max-height: 22px;
+  max-height: fit-content;
     height: 100%;
   max-width: fit-content;
     width: 100%;
@@ -407,18 +396,15 @@ h1 {
   align-items: center;
   background: linear-gradient(15deg, rgb(0, 0, 0) 65%, rgba(172, 172, 172, 0.6) 100%);
   margin: 0px;
-  border-color: rgb(90, 90, 90);
+    margin-right: 5px;
+  border-color:  rgb(165, 165, 165);
   border-style: solid;
   border-width: 1px;
-    border-bottom-width: 0px;
-    border-top-width: 2px;
-  height: 22px;
+  height: 25px;
   width: 50px;
   padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
 
 .current-page-text {
@@ -433,13 +419,11 @@ h1 {
   align-items: center;
   background: linear-gradient(15deg, rgb(0, 0, 0) 50%, rgba(36, 36, 36, 0.6) 100%);
   margin: 0px;
-  border-color:  rgb(90, 90, 90);
+    margin-right: 5px;
+  border-color:  rgb(75, 75, 75);
   border-style: solid;
   border-width: 1px;
-    border-bottom-width: 0px;
-    border-top-width: 2px;
-    border-left-width: 0px;
-  height: 22px;
+  height: 25px;
   width: 50px;
   padding: 20px;
     padding-top: 0px;
@@ -468,14 +452,15 @@ h1 {
   justify-content: space-between;
   align-self: center;
   align-items: center;
-  background: linear-gradient(180deg, rgb(20, 20, 20) 15%, rgb(56, 56, 56) 50%, rgb(20, 20, 20) 75%);    border-width: 1px;
+  background: linear-gradient(180deg, rgb(20, 20, 20) 15%, rgb(56, 56, 56) 50%, rgb(20, 20, 20) 75%);
   border-width: 1px;
     border-bottom-width: 0px;
-  border-color:  rgb(90, 90, 90);
+    border-right-width: 0px;
+    border-left-width: 0px;
+  border-color:  rgb(165, 165, 165);
   border-style: solid;
   height: 22px;
-  max-width: 928px;
-    width: 100%;
+  width: 100%;
 }
 
 .footer-object{
@@ -506,4 +491,19 @@ h1 {
   height: 300px;
   width: 300px;
   margin: 15px;
+}
+
+.header-name-plate{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
+  border-color: rgb(167, 167, 167);
+    border-style: solid;
+    border-width: 1px;
+      border-left-width: 0px;
+      border-right-width: 0px;
 }
