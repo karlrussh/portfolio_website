@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <title>Owen Hill</title>
-        <link rel="icon" href="assets/pageicon.png" type="image/png">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body style="padding-left: 0px;">
-        <div class="contents">
-            <div style="width: 950px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <img src="assets/banner-text.png">
-                <div class="header">
-                    <div class="button-holder">
-                        <a href="home.html"><div class="inactive-page">
-                            <p> <u>H</u>ome </p>
-                        </div> </a>
-                        <a href="games.html"> <div class="inactive-page">
-                            <p> <u>G</u>ames </p>
-                        </div> </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Owen Hill</title>
+    <link rel="icon" href="assets/pageicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scritps.js"></script>
+</head>
+
+<body style="padding-left: 0px;">
+    <div class="contents">
+        <div style="width: 950px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img src="assets/banner-text.png">
+            <div class="header">
+                <div class="button-holder">
+                    <a href="home.html">
                         <div class="inactive-page">
-                            <p> <u>A</u>bout </p>
+                            <p> <u>H</u>ome </p>
                         </div>
+                    </a>
+                    <a href="games.html">
+                        <div class="current-page">
+                            <p> <u>G</u>ames </p>
+                        </div>
+                    </a>
+                    <div class="inactive-page">
+                        <p> <u>A</u>bout </p>
                     </div>
-                    <p style="color: rgba(220, 220, 220, 0.7);">C:\games\hellcaster\... | v1.01 </p>
                 </div>
+                <p style="color: rgba(220, 220, 220, 0.7);"> <u>v1.01</u> </p>
             </div>
-            <div class="project-grid">
-                <div class="project-holder">     
-                    <div style="justify-content: flex-start; align-items: center;">
-                        <h1> Hellcaster </h1>
-                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                            <p style="color: rgb(131, 131, 131);"> <i> "A fantasy deck-builder FPS about a metalhead wizard" </i> </p>
-                            <p style="color: rgb(131, 131, 131);"> last updated: <i> 24/03/2026 </i> </p>
-                        </div>
+        </div>
+        <div style="display: flex; justify-items: flex-start; width: 928px; margin-bottom: 30px;">
+            <p style="color: rgba(220, 220, 220, 0.7);"><b>C:</b>\<u>games</u>\<u>hellcaster</u>\<u>...</u></p>
+        </div>
+        <div class="project-grid">
+            <div class="project-holder">
+                <div class="project-title">
+                    <div>
+                        <h1 style="margin-bottom: 5px; margin-top: 5px;"> Hellcaster </h1>
+                        <p style="color: rgb(187, 187, 187);"> <i> "A fantasy deck-builder FPS about a metalhead wizard"
+                            </i> </p>
                     </div>
-                    <div class="line-break" style="margin-bottom: 25px;">
-                    </div>  
-                    <div class="project-page">
-                        <div class="project-left">
+                    <img id="hellcaster-gif" src="assets/hellcaster_disc.gif">
+                </div>
+                <div class="gallery-grid">
+                    <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay1.png">
+                    <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay2.png">
+                    <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay3.png">
+                </div>
+                <div class="project-page">
+                    <div class="project-left">
+                        <div
+                            style="display: flex; background: linear-gradient(180deg, rgb(165, 165, 165) 2%, rgb(20, 20, 20) 7%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 100%); height: 80px; align-items: center; justify-content: center;">
+                            <h1 style="margin: 0px;"> ABOUT </h1>
+                        </div>
+                        <div style="padding: 15px">
                             <p> <b>Roles:</b> 3D character artist, UI artist, Shader artist & programmer<br>
                                 <b>Team size:</b> 12 <br>
                                 <b>Tools used:</b> Blender, Unity, Photoshop, Jira, GitHub<br>
-                                <b>Project length:</b> sept 2025 - dec 2025<br><br>                        
+                                <b>Project length:</b> sept 2025 - dec 2025<br><br>
                             </p>
                             <div class="line-break">
                             </div>
-                            <p> Hellcaster is a deckbuilding rythem-based shooter, that was created as part of MMU's mock-studio 'Cheddarcat'. <br><br>
-                                I contributed mainly to the visual design of the game, helping discover the unique look the game has.
-                                My contribuitons mainly lied within 3D character art, but I also held the role of UI programmer & artist, in which I created most of the player HUD and level select screens. <br><br>
-                                <br> <b>My contributions:</b> </p>
+                            <p> Hellcaster is a deckbuilding rythem-based shooter, that was created as part of MMU's
+                                mock-studio
+                                'Cheddarcat'. <br><br>
+                                I contributed mainly to the visual design of the game, helping discover the unique look
+                                the
+                                game has.
+                                My contribuitons mainly lied within 3D character art, but I also held the role of UI
+                                programmer &
+                                artist, in which I created most of the player HUD and level select screens. <br><br>
+                                <br> <b>My contributions:</b>
+                            </p>
                             <ul>
                                 <li> player HUD concept art </li>
                                 <li> main-menu concept art </li>
@@ -61,102 +87,115 @@
                                 <li> damage indicators </li>
                                 <li> level select 3D model, art, programming </li>
                             </ul>
-                            <br> <p> As this was a University module, we were given many networking opportunities. 
-                                Out of the <b>ten</b> projects within 'Cheddarcat', <b>three</b> got invited to showcase their game at the <b>2025 MCM Comic-Con Brimingham</b>.
-                                 We were lucky enough to be one of those groups chosen!
-                            </p>
-                            <!--<div class="gif-holder">
-                                <a href="https://opanyu.itch.io/hellcaster"> <img id="hellcaster-gif" src="assets/hellcaster_disc.gif"> </a>
-                            </div>-->
-                            
-                            <br><br><p> Below is a more in-depth look into my contributions to Hellcaster. Feel free to look around! </p>
+                            <br>
+                            <p> As this was a University module, we were given many networking opportunities.
+                                Out of the <b>ten</b> projects within 'Cheddarcat', <b>three</b> got invited to showcase
+                                their game at
+                                the <b>2025 MCM Comic-Con Brimingham</b>.
+                                We were lucky enough to be one of those groups chosen!
+                            </p><br>
+                            <div class="line-break">
+                            </div>
                             <div class="game-container" style="padding-top: 25px;">
                                 <div class="gameicon">
-                                    <a href="https://opanyu.itch.io/hellcaster"> <img id ="gameicon2" src="assets/gameicon_3.png"> </a>                               
+                                    <a target="_blank" href="https://opanyu.itch.io/hellcaster"> <img id="gameicon2"
+                                            src="assets/gameicon_3.png"> </a>
                                 </div>
-                                <div class="text-center"> <a href="https://opanyu.itch.io/hellcaster"> hellcaster.exe </a> </div>
+                                <a target="_blank" href="https://opanyu.itch.io/hellcaster">
+                                    <div class="button-fancy">
+                                        <p><b>Download on Itch</b></p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="project-right">
-                            <div class="gif-holder">
-                                <iframe 
-                                    width="400" 
-                                    height="215"
-                                    src="https://www.youtube.com/embed/vJ0nda8spuE?si=C1soc0BCUwUMT9hO" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                    style="margin: 5px; border-color: rgb(165, 165, 165); border-style: solid; border-width: 1px;">
-                                </iframe> 
-                                <p style="color: rgb(131, 131, 131);"> <i> Trailer by ShortstuffJoe! </i> </p>
-                            </div> 
-                            <img id="hellcaster-sc" src="assets/pagespecific/hellcaster/gameplay1.png">
-                            <img id="hellcaster-sc" src="assets/pagespecific/hellcaster/gameplay2.png">
-                            <img id="hellcaster-sc" src="assets/pagespecific/hellcaster/gameplay3.png">
+                    </div>
+                    <div class="project-right">
+                        <div
+                            style="display: flex; background: linear-gradient(180deg, rgb(165, 165, 165) 2%, rgb(20, 20, 20) 7%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 100%); height: 80px; align-items: center; justify-content: center;">
+                            <h1 style="margin: 0px;"> MORE </h1>
                         </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="subproject-grid">
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> Skeleton Enemy </p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/skeletonenemy.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> Flying Enemy </p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/flyingenemy.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> Player HUD</p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/playerHUD.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> Level Select </p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/levelselect.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> Damage Indicators </p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/damageindicators.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="header-intro">
-                        <p style="padding-left: 5px;"> MCM Comic-con </p>
-                    </div>
-                    <div class="subproject-holder">
-                        <img src="assets/pagespecific/hellcaster/comicon.png">
+                        <div class="subproject-grid">
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> Skeleton Enemy </p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/skeletonenemy.png">
+                                </div>
+                            </a>
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> Flying Enemy </p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/flyingenemy.png">
+                                </div>
+                            </a>
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> Player HUD</p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/playerHUD.png">
+                                </div>
+                            </a>
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> Level Select </p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/levelselect.png">
+                                </div>
+                            </a>
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> Damage Indicators </p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/damageindicators.png">
+                                </div>
+                            </a>
+                            <a href="subpage_template.html">
+                                <div class="subproject-holder">
+                                    <div class="subproject-header">
+                                        <p style="padding-left: 5px;"> MCM Comic-con </p>
+                                    </div>
+                                    <img src="assets/pagespecific/hellcaster/comicon.png">
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="gif-holder">
+                            <iframe width="400" height="222"
+                                src="https://www.youtube.com/embed/vJ0nda8spuE?si=C1soc0BCUwUMT9hO"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                style="margin: 5px; border-color: rgb(165, 165, 165); border-style: solid; border-width: 1px;">
+                            </iframe>
+                            <p style="color: rgb(131, 131, 131);"> <i> Trailer by ShortstuffJoe! </i> </p>
+                        </div>
+                        <img class="helcaster-sc" src="assets/pagespecific/hellcaster/gameplay1.png">
+                        <img class="helcaster-sc" src="assets/pagespecific/hellcaster/gameplay2.png">
+                        <img class="helcaster-sc" src="assets/pagespecific/hellcaster/gameplay3.png">-->
                     </div>
                 </div>
             </div>
+        </div>
+        <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; height: 100vh;">
+            <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
+            <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>25/03/2026</b> </i> </p>
+        </div>
         <div class="footer">
             <div class="footer-object">
-                <a href="https://karlrush.itch.io/" style="padding-right: 15px;">itch.io</a>
-                <a href="https://x.com/karlrussh" style="padding-right: 15px;">twitter</a> 
-                <a href="https://www.linkedin.com/in/owen-hill-567103252/" style="padding-right: 15px;">linkedin</a>  
+                <a target="_blank" href="https://karlrush.itch.io/" style="padding-right: 15px;"><u>i</u>tch.io</a>
+                <a target="_blank" href="https://x.com/karlrussh" style="padding-right: 15px;"><u>t</u>witter</a>
+                <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/"
+                    style="padding-right: 15px;"><u>l</u>inkedin</a>
             </div>
             <div class="footer-object">
                 <p> ... owenhill 2026 </p>
             </div>
         </div>
         <link rel="stylesheet" href="style.css">
-    </body>
+</body>
