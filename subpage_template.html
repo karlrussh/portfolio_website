@@ -12,39 +12,48 @@
 
 <body style="padding-left: 0px;">
     <div class="contents">
-        <div style="width: 950px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <img src="assets/banner-text.png">
-            <div class="header">
-                <div class="button-holder">
-                    <a href="home.html">
+        <div class="page-holder">
+            <div
+                style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <a href="home.html"><img id="name-plate" src="assets/banner-text.png"></a>
+                <div class="header">
+                    <div class="button-holder">
+                        <a href="home.html">
+                            <div class="inactive-page">
+                                <p> <u>H</u>ome </p>
+                            </div>
+                        </a>
+                        <a href="games.html">
+                            <div class="inactive-page">
+                                <p> <u>G</u>ames </p>
+                            </div>
+                        </a>
                         <div class="inactive-page">
-                            <p> <u>H</u>ome </p>
+                            <p> <u>A</u>bout </p>
                         </div>
-                    </a>
-                    <a href="games.html">
-                        <div class="current-page">
-                            <p> <u>G</u>ames </p>
+                        <div class="inactive-page">
+                            <p> <u>C</u>ontact </p>
                         </div>
-                    </a>
-                    <div class="inactive-page">
-                        <p> <u>A</u>bout </p>
                     </div>
+                    <p style="color: rgba(220, 220, 220, 0.7);"><u>v1.01</u></p>
                 </div>
-                <p style="color: rgba(220, 220, 220, 0.7);"> <u>v1.01</u> </p>
             </div>
-        </div>
-        <div
-            style="display: flex; flex-direction: column; justify-items: flex-start; width: 928px; margin-bottom: 30px;">
-            <p style="color: rgba(220, 220, 220, 0.7);">
-                <b>C:</b>\<u>games</u>\<u>game_title</u>\<u>subpage_title</u>\<u>...</u>
-            </p>
-        </div>
-        <div class="project-grid">
+            <div style="display: flex; justify-items: flex-start; width: 100%; margin-bottom: 30px;">
+                <p style="color: rgba(220, 220, 220, 0.7);"><b>C: </b>\
+                    <a href="games.html"><u>games</u></a>
+                    \
+                    <a href="hellcaster.html"><u>hellcaster</u></a>
+                    \
+                    <a href="subpage_template.html"><u>subpage-template</u></a>
+                    \
+                    <b>...</b>
+                </p>
+            </div>
             <div class="project-holder">
                 <div class="project-title">
                     <div>
-                        <h1 style="margin-bottom: 5px; margin-top: 5px;"> Subpage_title </h1>
-                        <p style="color: rgb(187, 187, 187);"> <i> "Subpage_description"
+                        <h1> Subpage_title </h1>
+                        <p> <i> "Subpage_description"
                             </i> </p>
                     </div>
                 </div>
@@ -62,12 +71,14 @@
                                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 mollit anim id est laborum.</p>
+                            <br>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 mollit anim id est laborum.</p>
+                            <br>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -89,22 +100,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div
-            style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; height: 100vh;">
-            <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
-            <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>25/03/2026</b> </i> </p>
+            <div
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; min-height: 100vh; width: 100%;">
+                <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
+                <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>26/03/2026</b> </i> </p>
+            </div>
         </div>
         <div class="footer">
-            <div class="footer-object">
-                <a target="_blank" href="https://karlrush.itch.io/" style="padding-right: 15px;"><u>i</u>tch.io</a>
-                <a target="_blank" href="https://x.com/karlrussh" style="padding-right: 15px;"><u>t</u>witter</a>
-                <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/"
-                    style="padding-right: 15px;"><u>l</u>inkedin</a>
-            </div>
-            <div class="footer-object">
-                <p> ... owenhill 2026 </p>
-            </div>
+            <a target="_blank" href="https://karlrush.itch.io/">
+                <p><u>i</u>tch.io</p>
+            </a>
+            <a target="_blank" href="https://x.com/karlrussh">
+                <p><u>t</u>witter</p>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/">
+                <p><u>l</u>inkedin</p>
+            </a>
         </div>
-        <link rel="stylesheet" href="style.css">
+    </div>
 </body>

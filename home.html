@@ -7,101 +7,129 @@
     <title>Owen Hill</title>
     <link rel="icon" href="assets/pageicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script defer src="scritps.js"></script>
 </head>
 
 <body style="padding-left: 0px;">
     <div class="contents">
-        <div style="width: 950px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <img src="assets/banner-text.png">
-            <div class="header">
-                <div class="button-holder">
-                    <a href="home.html">
-                        <div class="current-page">
-                            <p> <u>H</u>ome </p>
-                        </div>
-                    </a>
-                    <a href="games.html">
+        <div class="page-holder">
+            <div
+                style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <a href="home.html"><img id="name-plate" src="assets/banner-text.png"></a>
+                <div class="header">
+                    <div class="button-holder">
+                        <a href="home.html">
+                            <div class="current-page">
+                                <p> <u>H</u>ome </p>
+                            </div>
+                        </a>
+                        <a href="games.html">
+                            <div class="inactive-page">
+                                <p> <u>G</u>ames </p>
+                            </div>
+                        </a>
                         <div class="inactive-page">
-                            <p> <u>G</u>ames </p>
+                            <p> <u>A</u>bout </p>
                         </div>
-                    </a>
-                    <div class="inactive-page">
-                        <p> <u>A</u>bout </p>
+                        <div class="inactive-page">
+                            <p> <u>C</u>ontact </p>
+                        </div>
                     </div>
-                </div>
-                <p style="color: rgba(220, 220, 220, 0.7);"><u>v1.01</u></p>
-            </div>
-        </div>
-        <div style="display: flex; justify-items: flex-start; width: 928px; margin-bottom: 30px;">
-            <p style="color: rgba(220, 220, 220, 0.7);"><b>C:</b>\<u>home</u>\<u>...</u></p>
-        </div>
-        <div class="body-holder" style="margin-bottom: 50px;  border-bottom-width: 1px;">
-            <div class="header-intro"
-                style="width: 928px; margin-top: 0px; border-width: 0px; border-bottom-width: 1px;">
-                <div class="text-left">
-                    <p> Intro.exe </p>
-                </div>
-                <div class="text-right">
-                    <p> - ^ x </p>
+                    <p style="color: rgba(220, 220, 220, 0.7);"><u>v1.01</u></p>
                 </div>
             </div>
-            <div class="body-left">
+            <div style="display: flex; justify-items: flex-start; width: 100%; margin-bottom: 30px;">
+                <p style="color: rgba(220, 220, 220, 0.7);"><b>C: </b>\
+                    <a href="home.html"><u>home</u></a>
+                    \ <b>...</b>
+                </p>
             </div>
-            <div class="body" style="margin-bottom: 50px;">
-                <div class="bannerholder" style="margin-top: 15px;">
-                    <img id="headerbanner" src="assets/banner_1.png">
-                    <h1 style="position: absolute; padding: 15px;"> Hey, </h1>
-                    <p style="position: absolute; margin-top: 50px; text-align: center; padding: 15px;">
-                        Welcome to my website! My names <b>Owen</b>, I'm currently a third year student studying <b>
-                            Games Design </b> at the <b> Manchester Metropolitan University </b>.
-                        Here i've curated a selection of work I consider my best,
-                        which varies from personal projects to games created within a team . This is still a
-                        work-in-progess so any layout / content changes are to be expected .
-                        <br> Have a look around and enjoy :P <br><br> - Owen 'Karl' Hill
-                    </p>
-                    <!--<img id ="bannertext" src="assets/banner-text.png">-->
-                    <div class="social-banner-holder">
-                        <div class="header-intro">
-                            <div class="text-left">
-                                <p> contact_me.txt </p>
-                            </div>
-                            <div class="text-right">
-                                <p> x </p>
-                            </div>
+            <div class="project-title">
+                <div>
+                    <h1> Welcome Home! </h1>
+                    <p><i>"Wassup" </i></p>
+                </div>
+            </div>
+            <div class="page-grid">
+                <div class="page-box">
+                    <div
+                        style="width: 100%; display: flex; background: linear-gradient(180deg, rgb(165, 165, 165) 2%, rgb(20, 20, 20) 7%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 100%); height: 80px; align-items: center; justify-content: flex-start;">
+                    </div>
+                    <div style="padding: 15px;">
+                        <div class="line-break"> </div>
+                        <p style="text-align: center;">
+                            Welcome to my website! My names <b>Owen</b>, I'm currently a third year student studying <b>
+                                Games Design </b> at the <b> Manchester Metropolitan University </b>.
+                            Here i've curated a selection of work I consider my best,
+                            which varies from personal projects to games created within a team . This is still a
+                            work-in-progess so any layout / content changes are to be expected .
+                            <br> Have a look around and enjoy :P <br><br> - Owen 'Karl' Hill
+                        </p>
+                        <div class="line-break"> </div>
+                    </div>
+                    <div class="socials-holder" style="margin-bottom: 80px;">
+                        <div class="socials-header">
+                            <p><b>contact-me.txt</b></p>
+                            <p> - o x </p>
                         </div>
                         <div class="socials">
-                            <img id="itchio" src="assets/itchio.png">
-                            <a target="_blank" href="https://karlrush.itch.io/" style="padding: 5px; padding-top: 0px;">
-                                <u>i</u>tch.io
+                            <img src="assets/itchio.png">
+                            <a target="_blank" href="https://karlrush.itch.io/">
+                                <p><u>i</u>tch.io</p>
                             </a>
-                            <img id="twitter" src="assets/twitter.png">
-                            <a target="_blank" href="https://x.com/karlrussh" style="padding: 5px; padding-top: 0px;">
-                                <u>t</u>witter
+                            <img src="assets/twitter.png">
+                            <a target="_blank" href="https://x.com/karlrussh">
+                                <p><u>t</u>witter</p>
                             </a>
-                            <img id="linkedin" src="assets/linkedin.png">
-                            <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/"
-                                style="padding: 5px; padding-top: 0px;"> <u>l</u>inkedin </a>
+                            <img src="assets/linkedin.png">
+                            <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/">
+                                <p><u>l</u>inkedin</p>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div
+                    style="display: flex; flex-direction: column; width: 100%; height: 100%; align-items: center; justify-content: space-between;">
+                    <div class="project-title">
+                        <div>
+                            <h1> Featured Project </h1>
+                            <p><i>"Hellcaster" </i></p>
+                        </div>
+                        <img src="assets/hellcaster_disc.gif">
+                    </div>
+                    <div class="featured-game-grid">
+                        <a href="hellcaster.html">
+                            <div class="game-holder">
+                                <img src="assets/gamepic_2.png">
+                                <div class="caption">
+                                    <p> Hellcaster \ 2025 </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay1.png">
+                <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay2.png">
+                <img class="gallery-img" src="assets/pagespecific/hellcaster/gameplay3.png">
+            </div>
+            <div
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; min-height: 100vh; width: 100%;">
+                <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
+                <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>26/03/2026</b> </i> </p>
             </div>
         </div>
-    </div>
-    <div
-        style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; height: 100vh;">
-        <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
-        <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>25/03/2026</b> </i> </p>
-    </div>
-    <div class="footer">
-        <div class="footer-object">
-            <a target="_blank" href="https://karlrush.itch.io/" style="padding-right: 15px;"><u>i</u>tch.io</a>
-            <a target="_blank" href="https://x.com/karlrussh" style="padding-right: 15px;"><u>t</u>witter</a>
-            <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/"
-                style="padding-right: 15px;"><u>l</u>inkedin</a>
-        </div>
-        <div class="footer-object">
-            <p> ... owenhill 2026 </p>
+        <div class="footer">
+            <a target="_blank" href="https://karlrush.itch.io/">
+                <p><u>i</u>tch.io</p>
+            </a>
+            <a target="_blank" href="https://x.com/karlrussh">
+                <p><u>t</u>witter</p>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/">
+                <p><u>l</u>inkedin</p>
+            </a>
         </div>
     </div>
-    <link rel="stylesheet" href="style.css">
 </body>
