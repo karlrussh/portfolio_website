@@ -341,16 +341,16 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 15px;
   width: 100%;
   height: 100%;
 }
 
 .project-left {
+  display: flex;
+  flex-direction: column;
   width: 53%;
-  height: 100%;
-  margin: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color: rgb(63, 63, 63); 
     border-style: solid; 
@@ -360,9 +360,9 @@ h1 {
 }
 
 .project-right  {
+  display: flex;
+  flex-direction: column;
   width: 47%;
-  height: 100%;
-  margin: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color: rgb(63, 63, 63); 
     border-style: solid; 
@@ -406,6 +406,19 @@ h1 {
 }
 .gallery-grid img {
   background: black;
+  padding: 2px;
+}
+
+.gallery-grid-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.gallery-grid-home img {
+  background: black;
+  max-height: 48%;
+  object-fit: cover;
   padding: 2px;
 }
 
@@ -551,12 +564,14 @@ h1 {
 
 .page-grid {
   display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
   gap: 30px; 
   margin-top: 30px;
     margin-bottom: 15px;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .socials-holder {
