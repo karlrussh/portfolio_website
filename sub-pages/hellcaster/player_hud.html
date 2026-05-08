@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Owen Hill</title>
+    <link rel="icon" href="/assets/pageicon.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/scritps.js"></script>
+</head>
+
+<body style="padding-left: 0px;">
+    <div class="contents">
+        <div class="page-holder">
+            <div
+                style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <a href="/home.html"><img id="name-plate" src="/assets/banner-text.png"></a>
+                <div class="header">
+                    <div class="button-holder">
+                        <a href="/home.html">
+                            <div class="inactive-page">
+                                <p> <u>H</u>ome </p>
+                            </div>
+                        </a>
+                        <a href="/games.html">
+                            <div class="inactive-page">
+                                <p> <u>G</u>ames </p>
+                            </div>
+                        </a>
+                        <div class="inactive-page">
+                            <p> <u>A</u>bout </p>
+                        </div>
+                        <a href="/contact.html">
+                            <div class="inactive-page">
+                                <p> <u>C</u>ontact </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-items: flex-start; width: 100%; margin-bottom: 30px;">
+                <p style="color: rgba(220, 220, 220, 0.7);"><b>C: </b>\
+                    <a href="/games.html"><u>games</u></a>
+                    \
+                    <a href="/hellcaster.html"><u>hellcaster</u></a>
+                    \
+                    <a href="player_hud.html"><u>player hud</u></a>
+                    \
+                    <b>...</b>
+                </p>
+            </div>
+            <div class="project-holder">
+                <div class="project-title">
+                    <div>
+                        <h1> Player HUD </h1>
+                        <p> <i> "My contribution to the visual feedback of Hellcaster"
+                            </i> </p>
+                    </div>
+                </div>
+                <div class="project-page">
+                    <div class="project-left" style="width:100%">
+                        <div class="project-header">
+                            <h1> About</h1>
+                        </div>
+                        <div style="padding: 15px;">
+                            <p> As in any other first-person shooter game, the player needs a heads-up display to view
+                                their character's stats and actions. For this, I designed the initial concept sketched
+                                for the player HUD and designed and integrated the health bar and combo meter.
+                            </p>
+                            <ul>
+                                <li>Designed concept sketches that helped the team implement the player HUD.</li>
+                                <li>Developed a diegetic approach to displaying player stats.</li>
+                                <li>Helped develop ideas such as <b>applying a screen tint to show more clearly the
+                                        current
+                                        spell type</b> and <b>having the center crosshair act as the BPM counter</b>.
+                                </li>
+                                <li>Designed art assets and shaders, to help fit the UI element into the music theme of
+                                    the game.</li>
+                                <li>Worked closely with systems developers to ensure the UI element accurately
+                                    interacted with their system.</li>
+                                <li>Iterated upon feedback to help consolidate the UI element more into the game's
+                                    style.</li>
+                            </ul>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-page">
+                    <div class="project-left">
+                        <div class="project-header">
+                            <h1> Health Bar </h1>
+                        </div>
+                        <div style="padding: 15px;">
+                            <p>
+                                The health bar was designed to be as diegetic as possible. In the initial design
+                                sketches, you can see clear consideration of the game’s musical theming. The player’s
+                                health is signified by a sound wave that dynamically shifts colour, speed and height
+                                based on current health. This not only integrates the music theme in a fun way but also
+                                creates a UI element that clearly communicates the needed information at a glance.
+                            </p>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="project-header">
+                            <h1> Gallery </h1>
+                        </div>
+                        <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); padding: 15px;">
+                            <img class="gallery-img"
+                                src="/assets/pagespecific/hellcaster/player_hud/HealthBarMockup.png">
+                            <img class="gallery-img" src="/assets/pagespecific/hellcaster/player_hud/healthbarGIF.gif">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-page">
+                    <div class="project-left">
+                        <div class="project-header">
+                            <h1> Combo Meter </h1>
+                        </div>
+                        <div style="padding: 15px;">
+
+                            <p> Like the health bar, the main goal going into designing the combo meter was to create a
+                                UI element that fit within the game's musical theme. As the main goal of the game was to
+                                stay on beat, it made thematic sense to display this notion with musical items, in this
+                                case, a vinyl disc. This is amplified by sound waves emitting from around the vinyl
+                                disc, which changes colour based on player performance. A text box appears whenever the
+                                player hits on beat, showing a performance metric indicating how on beat their attack
+                                was. Here, I had to work closely with another colleague's combo system, integrating my
+                                back-end UI code into their combo manager.
+                                <br><br>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <div class="project-header">
+                            <h1> Gallery </h1>
+                        </div>
+                        <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); padding: 15px;">
+                            <img class="gallery-img"
+                                src="/assets/pagespecific/hellcaster/player_hud/Combo meter idea.png">
+                            <img class="gallery-img"
+                                src="/assets/pagespecific/hellcaster/player_hud/combmometerGIF.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; margin-top: 50px; margin-bottom: 50px; min-height: 100vh; width: 100%;">
+            <p style="color: rgb(131, 131, 131);"> <i> the end. </i> </p>
+            <p style="color: rgb(131, 131, 131);"> <br><br>last updated: <i> <b>08/05/2026</b> </i> </p>
+        </div>
+    </div>
+    <div class="footer">
+        <a target="_blank" href="https://karlrush.itch.io/">
+            <p><u>i</u>tch.io</p>
+        </a>
+        <a target="_blank" href="https://x.com/karlrussh">
+            <p><u>t</u>witter</p>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/owen-hill-567103252/">
+            <p><u>l</u>inkedin</p>
+        </a>
+    </div>
+    </div>
+</body>
