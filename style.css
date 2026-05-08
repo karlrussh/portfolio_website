@@ -337,6 +337,22 @@ h1 {
   width: 64px;
 }
 
+.project-header {
+  display: flex; 
+  flex-direction: column;
+  background: linear-gradient(180deg, rgb(165, 165, 165) 2%, rgb(20, 20, 20) 7%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 100%); 
+  height: 80px; width: 
+  100%; 
+  align-items: center; 
+  justify-content: center;
+}
+.project-header h1 {
+  margin: 0px;
+}
+.project-header p {
+  color: rgb(187, 187, 187);
+}
+
 .project-page {
   display: flex;
   flex-direction: row;
@@ -350,6 +366,7 @@ h1 {
 .project-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 53%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color: rgb(63, 63, 63); 
@@ -362,6 +379,7 @@ h1 {
 .project-right  {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 47%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color: rgb(63, 63, 63); 
@@ -424,12 +442,15 @@ h1 {
 
 .subproject-grid {
   display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
-  gap: 30px; 
-  column-gap: 0px;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  column-gap: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   justify-items: center;
+}
+.subproject-grid a:link {
+  text-decoration: underline;
 }
 
 .subproject-holder {
@@ -478,6 +499,8 @@ h1 {
   height: fit-content;
   width: 180px; 
   z-index: 1;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 #lightbox {
@@ -552,7 +575,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(20, 20, 20, 1) 70%, rgba(0, 0, 0, 1) 100%);
   border-color: rgb(63, 63, 63); 
@@ -678,6 +701,10 @@ h1 {
   }
   .project-right {
     width: 100%
+  }
+
+  .subproject-grid {
+    grid-template-columns: repeat(1, 1fr); 
   }
 
 }
